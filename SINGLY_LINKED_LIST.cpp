@@ -99,16 +99,19 @@ void RemoveAfterQ(LIST &L, NODE *Q)
 
 void RemoveX(LIST &L, int x)
 {
-    NODE* p=L.pHead;
-    NODE* Q=NULL;
-    while(p!=NULL && p->info!=x) 
+    NODE *p = L.pHead;
+    NODE *Q = NULL;
+    while (p != NULL && p->info != x)
     {
-        Q=p;
-        p=p->pNext;
+        Q = p;
+        p = p->pNext;
     }
-    if(p==NULL) return ;
-    if(Q!=NULL) RemoveAfterQ(L,Q);
-    else RemoveHead(L);
+    if (p == NULL)
+        return;
+    if (Q != NULL)
+        RemoveAfterQ(L, Q);
+    else
+        RemoveHead(L);
 }
 int main()
 {
