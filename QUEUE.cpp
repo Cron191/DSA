@@ -65,7 +65,8 @@ void EnQueue(QUEUE &q, int x)
 }
 int TopQueue(QUEUE &q)
 {
-    if(!isEmpty(q)) return q.Front->info;
+    if (!isEmpty(q))
+        return q.Front->info;
 }
 int main()
 {
