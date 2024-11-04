@@ -100,7 +100,7 @@ void RemoveAfterQ(LIST &L, NODE *Q)
 void RemoveX(LIST &L, int x)
 {
     NODE* p=L.pHead;
-    NODE* Q==NULL;
+    NODE* Q=NULL;
     while(p!=NULL && p->info!=x) 
     {
         Q=p;
