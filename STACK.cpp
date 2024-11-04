@@ -74,5 +74,5 @@ int TopStack(STACK s)
 
 int main()
 {
-    STACK s;
+    STACK s;//
 }
