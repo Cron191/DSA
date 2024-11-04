@@ -66,6 +66,12 @@ void PopStack(STACK &s)
         }
     }
 }
+
+int TopStack(STACK s)
+{
+    return s.pHead->info;
+}
+
 int main()
 {
     STACK s;
