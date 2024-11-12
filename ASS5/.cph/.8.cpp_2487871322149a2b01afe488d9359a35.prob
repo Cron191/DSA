@@ -1,0 +1,1 @@
+{"name":"Local: 8","url":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\ASS5\\8.cpp","tests":[{"id":1731383016669,"input":"30 15 50 40 60 55 70 65 80 -1\n50","output":"30 15 50 -1\n30"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\ASS5\\8.cpp","group":"local","local":true}

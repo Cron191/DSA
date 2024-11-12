@@ -88,15 +88,10 @@ void chuyen(float a)
 }
 void Output(LIST &l)
 {
-    if (l.pHead == NULL)
-    {
-        cout << "Empty List.";
-        return;
-    }
     NODE *p = l.pHead;
     while (p != NULL)
     {
-        cout << p->info.MASV << '\t' << p->info.HoTen << '\t' << p->info.NgaySinh<<'\t' << p->info.GioiTinh << '\t' << p->info.DiemToan << '\t' << p->info.DiemLy << '\t' << p->info.DiemHoa << '\t';
+        cout << p->info.MASV << '\t' << p->info.HoTen << '\t' << p->info.NgaySinh << '\t' << p->info.GioiTinh << '\t' << p->info.DiemToan << '\t' << p->info.DiemLy << '\t' << p->info.DiemHoa << '\t';
         chuyen(p->info.DTB);
         cout << endl;
         p = p->pNext;
