@@ -1,0 +1,1 @@
+{"name":"Local: lamgium","url":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\lamgium.cpp","tests":[{"id":1734441026939,"input":"5\n12\n903 901 902 904 976 976 973 986 976 904 905 986","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\lamgium.cpp","group":"local","local":true}

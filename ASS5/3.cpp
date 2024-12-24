@@ -57,17 +57,23 @@ bool searchNode(TREE T, int x)
     }
 }
 
+int DemNode(TREE T)
+{
+    if (T->pLeft != NULL && T->pRight != NULL)
+        return 1 + DemNode(T->pLeft) + DemNode(T->pRight);
+}
 int main()
 {
     TREE T;   // hay: TNODE* T;
     T = NULL; // Khoi tao cay T rong, or: CreateEmptyTree(T)
     CreateTree(T);
 
-    int x;
-    cin >> x;
-    if (searchNode(T, x))
-        cout << "true";
-    else
-        cout << "false";
+    // int x;
+    // cin >> x;
+    // if (searchNode(T, x))
+    //     cout << "true";
+    // else
+    //     cout << "false";
+    cout << DemNode(T);
     return 0;
 }

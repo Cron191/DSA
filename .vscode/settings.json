@@ -90,6 +90,7 @@
         "valarray": "cpp",
         "variant": "cpp",
         "xiosbase": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "stack": "cpp"
     }
 }
