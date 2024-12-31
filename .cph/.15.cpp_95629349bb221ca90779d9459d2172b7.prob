@@ -1,0 +1,1 @@
+{"name":"Local: 15","url":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\15.cpp","tests":[{"id":1735371131884,"input":"5 2 \n\nATTN 2020 \n\nCTDL L21 \n\nCode 123 \n\nUIT HCM \n\nNTS TDK \n\nabc \n\nATTN ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\OneDrive\\Desktop\\Cron\\DSA\\15.cpp","group":"local","local":true}
