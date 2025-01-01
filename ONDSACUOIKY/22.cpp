@@ -36,7 +36,7 @@ void CreateTree(TREE &T)
         int x;
         cin >> x;
         if (x == -1)
-            return;
+            break;
         InsertTree(T, x);
     }
 }
@@ -45,8 +45,7 @@ int CountNode(TNODE *T)
 {
     if (T == NULL)
         return 0;
-    if (T != NULL)
-        return 1 + CountNode(T->pLeft) + CountNode(T->pRight);
+    return 1 + CountNode(T->pLeft) + CountNode(T->pRight);
 }
 
 void TongSoNodeTrai_LonHon_TongSoNodePhai_1dv(TNODE *T)
@@ -70,6 +69,5 @@ int main()
         cout << "Empty Tree.";
     else
         TongSoNodeTrai_LonHon_TongSoNodePhai_1dv(T);
-
     return 0;
 }
