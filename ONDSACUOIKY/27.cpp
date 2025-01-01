@@ -88,29 +88,29 @@ void DeleteHashtable(Hashtable &ht)
 
 int Insert(Hashtable &ht, Hocsinh x)
 {
-
     if (1.0 * (ht.n + 1) / ht.M > LOAD)
         return 0;
-
     int index = x.Maso % ht.M;
     int i = 0;
-
-    while (i < ht.M)
+    if (ht.table[index].Maso <= 0)
     {
-
-        if (ht.table[index].Maso <= 0)
-        {
-            ht.table[index] = x;
-            ht.n++;
-            return 1;
-        }
-        if (ht.table[index].Maso == x.Maso && ht.table[index].Maso > 0)
-            return 0;
-        if (ht.table[index].Maso != x.Maso && ht.table[index].Maso > 0)
-        {
-            i++;
-            index = (x.Maso % ht.M + i) % ht.M;
-        }
+        ht.table[index] = x;
+        ht.n++;
+        return 1;
     }
-    return 0;
+    while (ht.table[index].Maso > 0 && ht.table[index].Maso != x.Maso)
+    {
+        i++;
+        index = (x.Maso + i) % ht.M;
+        if (i >= ht.M)
+            return 0;
+    }
+    if (ht.table[index].Maso <= 0)
+    {
+        ht.table[index] = x;
+        ht.n++;
+        return 1;
+    }
+    if (ht.table[index].Maso > 0 && ht.table[index].Maso == x.Maso)
+        return 0;
 }
