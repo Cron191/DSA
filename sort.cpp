@@ -233,3 +233,18 @@ int main()
     for (int x : a)
         cout << x << " ";
 }
+#include <vector>
+#include <map>
+#include<stack>
+map<string, vector<int>> a;
+vector<vector<int>> G(6, vector<int>(6, 0));
+
+
+void DuyetDFS(int v)
+{
+    vector<vector<int>> G (v, vector<int> (v,0)); // Ma trận
+    vector<string> v_dinh; // Lưu tên các đỉnh
+    map<string,int> anh_xa; // Anh xạ tên đỉnh sang index
+    stack<string> open; //Lưu các đỉnh chờ duyệt
+    
+}
